@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SeaCoffee - Không chỉ là cafe, mà còn là hương vị của biển</title>
+<meta name="description" content="Website www.seacoffee.vn - là kênh phân phối online các loại nước uống cà phê thật sạch, cao cấp, thơm ngon. Nhiều khuyến mãi hấp dẫn">
+<meta name="keywords" content="seacoffe, cafe sea, coffe, nhận xét">
+<meta http-equiv="refresh" content="5000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="../image/cafe-removebg-preview.png" type="image/x-icon">
+<script src="https://kit.fontawesome.com/f6447b0f19.js" crossorigin="anonymous"></script>
+<link href="../my-css/nhanxet.css" rel="stylesheet";>
+<link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+</head>
+<body>
+        <section>
+            <div>
+                <header>
+                    <div class="contact">
+                        <a href="#">Email:hgooshvhd123@gmail.com</a>
+                        <a href="#">Tại sao lại chọn SeaCoffee</a>
+                        <a href="#">Hệ thống cửa hàng</a>
+                        <a href="#">Hỏi đáp</a>
+                    </div>  
+                    <section class="nav">
+                        <img class="img-logo" src="../image/SeaCoffee-removebg-preview.png">
+                        <nav class="clearfix">
+                            <div class="topnav" id="myTopnav">
+                                <a href="index.html">Trang chủ</a>
+                                <a href="menu.html">Thực đơn</a>
+                                <a href="infor.html">Thông tin</a>
+                                <a href="nhanxet.html">Nhận xét</a>
+                                <a href="contact.html">Liên hệ</a>
+                                <a href="sign-in.html"><i class="fas fa-user"></i> Đăng nhập / Đăng ký</a>
+                                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                            </div>
+                        </nav>
+                    </section>
+            </div>
+            </header>
+        </section>
+        <section>
+            <div class="main">
+                <div class="nav-bottom">
+                    <button class="bt-search" style="float: right; width: 10%; border-radius: 10px; background-color: white ;border: orange solid 2px" ><i class="fas fa-search"></i></button>
+                    <input type ="text" placeholder="Tìm kiếm ..." id="kw" style="float: right; margin-right: 10px; border-radius: 10px; outline: none;border: orange solid 2px"> 
+                    <div id="set-count-res"><p id="count-res"></p></div>
+                </div>
+                <div class="title">
+                    <h2>Nhận xét của khách hàng</h2>
+                    <div>Được cập nhật lúc: <span id="current-time"></span></div>
+                </div>   
+                <div class="comments">
+                    <ul class="mark">
+                        <li class="comment">
+                            <div class="avatar"><img src="../image/images/images/users/user-1.png" /></div>
+                            <div class="text">
+                                <p>Nước uống ngon, tôi rất hài lòng</p>
+                                <ul class="ratings">
+                                    <li class="star"></li>
+                                    <li class="star selected"></li>
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="comment">
+                            <div class="avatar"><img src="../image/images/images/users/user-2.png" /></div>
+                            <div class="text">
+                                <p>Chủ web chưa có người yêu, 10đ</p>
+                                <ul class="ratings">
+                                    <li class="star selected"></li>
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                  </ul>
+                            </div>
+                        </li>
+                        <li class="comment">
+                            <div class="avatar"><img src="../image/images/images/users/user-3.png" /></div>
+                            <div class="text">
+                                <p>Web tàn quá, không thích</p>
+                                <ul class="ratings">
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="star selected"></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="u-comment clearfix">
+                    <p id="tl-cmt">Nêu cảm nghĩ của bạn tại đây <i class="far fa-hand-point-right"></i></p>
+                    <textarea id="txt" placeholder="nêu cảm nhận của bạn tại đây...." cols="30" rows="5"  style="width: 100%"></textarea>
+                    <ul class="ratings" id="custom" style="width: 100%;">
+                        <li class="stars"></li>
+                        <li class="stars"></li>
+                        <li class="stars"></li>
+                        <li class="stars"></li>
+                        <li class="stars"></li>
+                      </ul>
+                    <button id="submit-bt">Bình luận</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div>
+                <a href="#">Công ty</a>
+                <a href="#">Cơ hội nghề nghiệp</a>
+            </div>
+            <div>
+                <a href="#">Câu hỏi thường gặp</a>
+            </div>
+            <div>
+                <a href="#">Tìm cửa hàng</a>
+                <a href="#">Dành cho đối tác</a>
+            </div>
+            <div class="facebook-youtube">
+                <a target="_blank" href="https://www.facebook.com/meonganh/"><img src="../image/images/images/icons/facebook.png" /></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCpMQcQBb7QBJ2wDaVelzSpA"><img src="../image/images/images/icons/youtube.png" /></a>
+            </div>
+            <div>
+                <img src="../image/SeaCoffee-removebg-preview.png" />
+            </div>
+        </footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="../jquery-3.6.0.min.js"></script>
+<script src="../myjs/comment.js"></script>
+</body>
+</html>

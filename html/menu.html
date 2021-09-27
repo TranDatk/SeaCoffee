@@ -1,0 +1,382 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SeaCoffee - Không chỉ là cafe, mà còn là hương vị của biển</title>
+<meta name="description" content="Website www.seacoffee.vn - là kênh phân phối online các loại nước uống cà phê thật sạch, cao cấp, thơm ngon. Nhiều khuyến mãi hấp dẫn">
+<meta name="keywords" content="seacoffe, cafe sea, coffe, nhận xét">
+<meta http-equiv="refresh" content="5000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="../image/cafe-removebg-preview.png" type="image/x-icon">
+<script src="../jquery-3.6.0.min.js"></script>
+<script src="https://kit.fontawesome.com/f6447b0f19.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="../my-css/menu.css" rel="stylesheet";>
+</head>
+<body>
+    <div>
+        <header>
+            <div class="contact">
+                <a href="#">Email:hgooshvhd123@gmail.com</a>
+                <a href="#">Tại sao lại chọn SeaCoffee</a>
+                <a href="#">Hệ thống cửa hàng</a>
+                <a href="#">Hỏi đáp</a>
+            </div>  
+            <section class="nav">
+                <img class="img-logo" src="../image/SeaCoffee-removebg-preview.png">
+                <nav class="clearfix">
+                    <div class="topnav" id="myTopnav">
+                        <a href="index.html">Trang chủ</a>
+                        <a href="menu.html">Thực đơn</a>
+                        <a href="infor.html">Thông tin</a>
+                        <a href="nhanxet.html">Nhận xét</a>
+                        <a href="contact.html">Liên hệ</a>
+                        <a href="sign-in.html"><i class="fas fa-user"></i> Đăng nhập / Đăng ký</a>
+                        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                    </div>
+                </nav>
+            </section>
+        </header>
+    </div>
+    <section class="main">
+        <nav class="check">
+            <div class="row">
+                <button class="check-cart" type="button" data-toggle="modal" data-target="#cart"><img style="width: 60px; margin-right: 10px; position: relative; top: -30%" src="../image/anh-dong-trang-tri-powerpoint--unscreen.gif"> Đồ uống (<span class="total-count"></span>)</button>
+                <button class="clear-cart"><img style="width: 70px; position: relative; left: -5%;" src="../image/cat.gif">Xóa bỏ</button>
+            </div>
+        </nav>
+        <div id="social-container">
+            <a target="_blank" href="https://www.facebook.com/meonganh/" style="background-color: #3b5999"><i class="fab fa-facebook"></i></a>
+            <a target="_blank" href="https://www.instagram.com/tran.datk" style="background-color: #dd4b39"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCpMQcQBb7QBJ2wDaVelzSpA" style="background-color: #cd201f"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="../image/banner1.jpg" style="width:100%;">
+                </div>
+          
+                <div class="item">
+                  <img src="../image/banner2.jpg" style="width:100%;">
+                </div>
+                <div class="item">
+                  <img src="../image/banner3.jpg" style="width:100%;">
+                </div>
+              </div>
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </div>
+        <img style="float: left;" src="../image/anh-dong-dep-119_114435911.gif">
+        <img style="float: right;" src="../image/anh-dong-dep-119_114435911.gif">
+        <div class="heading-menu">
+            <p>Thực đơn hôm nay</p>
+        </div>
+        <div id="leaves" style="text-align: left;">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i> 
+        </div>
+        <div id="leaves" style="text-align: right;">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i> 
+        </div>
+        <div class="card">
+            <div class="thumbnail">
+                <img src="../image/coffee-5082544_1280.jpg") class="left"> 
+            </div>
+            <div class="rightcard">
+                <h1>Một tách cà phê Espresso cho một ngày mới năng động, tại sao không?</h1> 
+                <div class="author">
+                    <img src="../image/SeaCoffee-removebg-preview.png">
+                    <h2>SeaCoffee</h2>
+                </div> 
+                <div class="separator"></div>
+                <p>Hãy quên đi những bộn bề cuộc sống để tìm thấy những niềm vui nho nhỏ từ ly Cà phê Espresso của SeaCoffee. Bí quyết để cho ra hương vị đậm đà, tinh tế của một tách cà phê Espresso là phương pháp phối trộn độc đáo, công phu giữa hai loại cà phê Arabica và Robusta thượng hạng, và đặc biệt là không thể thiếu được kĩ năng pha chế điêu luyện từ các Barista của chúng tôi.</p> 
+                <ul>
+                    <li>
+                        <i class="fa fa-eye fa-2x"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-heart-o fa-2x"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope-o fa-2x"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-share-alt fa-2x"></i>
+                    </li>
+                </ul>
+            </div>
+            <h5>1</h5> 
+            <h6>Cà phê Espresso - 30.000 VND</h6> 
+            <!-- Nav -->
+            <a href="#" data-name="Espresso" data-price="30000" class="float-button add-to-cart butn btn-white btn-animate">
+                <i style="font-size: 30px; margin-top: 7px" class="fas fa-cart-arrow-down"></i>
+            </a>
+        </div>
+        <div class="container-animation">
+            <div class="coffee-header">
+              <div class="coffee-header__buttons coffee-header__button-one"></div>
+              <div class="coffee-header__buttons coffee-header__button-two"></div>
+              <div class="coffee-header__display"></div>
+              <div class="coffee-header__details"></div>
+            </div>
+            <div class="coffee-medium">
+              <div class="coffe-medium__exit"></div>
+              <div class="coffee-medium__arm"></div>
+              <div class="coffee-medium__liquid"></div>
+              <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
+              <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
+              <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
+              <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
+              <div class="coffee-medium__cup"></div>
+            </div>
+            <div class="coffee-footer"></div>
+          </div>
+
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="study">
+            <rect width="64" height="64"/>
+            <g id="smoke">
+            <path id="smoke-2" d="M9 21L9.55279 19.8944C9.83431 19.3314 9.83431 18.6686 9.55279 18.1056L9 17L8.44721 15.8944C8.16569 15.3314 8.16569 14.6686 8.44721 14.1056L9 13" stroke="#797270"/>
+            <path id="smoke-1" d="M6.5 22L7.05279 20.8944C7.33431 20.3314 7.33431 19.6686 7.05279 19.1056L6.5 18L5.94721 16.8944C5.66569 16.3314 5.66569 15.6686 5.94721 15.1056L6.5 14" stroke="#797270"/>
+            </g>
+            <g id="laptop">
+            <rect id="laptop-base" x="17" y="28" width="20" height="3" fill="#F3F3F3" stroke="#453F3C" stroke-width="2"/>
+            <rect id="laptop-screen" x="18" y="17" width="18" height="11" fill="#5A524E" stroke="#453F3C" stroke-width="2"/>
+            <rect id="line-1" x="20" y="19" width="14" height="1" fill="#F78764"/>
+            <rect id="line-2" x="20" y="21" width="14" height="1" fill="#F9AB82"/>
+            <rect id="line-3" x="20" y="23" width="14" height="1" fill="#F78764"/>
+            <rect id="line-4" x="20" y="25" width="14" height="1" fill="#F9AB82"/>
+            </g>
+            <g id="cup">
+            <rect id="Rectangle 978" x="5" y="24" width="5" height="7" fill="#CCC4C4" stroke="#453F3C" stroke-width="2"/>
+            <path id="Ellipse 416" d="M11 28C12.1046 28 13 27.1046 13 26C13 24.8954 12.1046 24 11 24" stroke="#453F3C" stroke-width="2"/>
+            <rect id="Rectangle 996" x="6" y="25" width="3" height="1" fill="#D6D2D1"/>
+            </g>
+            <g id="books">
+            <rect id="Rectangle 984" x="58" y="27" width="4" height="14" transform="rotate(90 58 27)" fill="#B16B4F" stroke="#453F3C" stroke-width="2"/>
+            <rect id="Rectangle 985" x="56" y="23" width="4" height="14" transform="rotate(90 56 23)" fill="#797270" stroke="#453F3C" stroke-width="2"/>
+            <rect id="Rectangle 986" x="60" y="19" width="4" height="14" transform="rotate(90 60 19)" fill="#F78764" stroke="#453F3C" stroke-width="2"/>
+            <rect id="Rectangle 993" x="47" y="20" width="12" height="1" fill="#F9AB82"/>
+            <rect id="Rectangle 994" x="43" y="24" width="12" height="1" fill="#54504E"/>
+            <rect id="Rectangle 995" x="45" y="28" width="12" height="1" fill="#804D39"/>
+            </g>
+            <g id="desk">
+            <rect id="Rectangle 973" x="4" y="31" width="56" height="5" fill="#797270" stroke="#453F3C" stroke-width="2"/>
+            <rect id="Rectangle 987" x="10" y="36" width="30" height="6" fill="#797270" stroke="#453F3C" stroke-width="2"/>
+            <rect id="Rectangle 975" x="6" y="36" width="4" height="24" fill="#797270" stroke="#453F3C" stroke-width="2"/>
+            <rect id="Rectangle 974" x="40" y="36" width="18" height="24" fill="#797270" stroke="#453F3C" stroke-width="2"/>
+            <line id="Line 129" x1="40" y1="48" x2="58" y2="48" stroke="#453F3C" stroke-width="2"/>
+            <line id="Line 130" x1="22" y1="39" x2="28" y2="39" stroke="#453F3C" stroke-width="2"/>
+            <line id="Line 142" x1="46" y1="42" x2="52" y2="42" stroke="#453F3C" stroke-width="2"/>
+            <line id="Line 131" x1="46" y1="54" x2="52" y2="54" stroke="#453F3C" stroke-width="2"/>
+            <rect id="Rectangle 988" x="11" y="37" width="28" height="1" fill="#54504E"/>
+            <rect id="Rectangle 992" x="5" y="32" width="54" height="1" fill="#9E9492"/>
+            <rect id="Rectangle 989" x="7" y="37" width="2" height="1" fill="#54504E"/>
+            <rect id="Rectangle 990" x="41" y="37" width="16" height="1" fill="#54504E"/>
+            <rect id="Rectangle 991" x="41" y="49" width="16" height="1" fill="#54504E"/>
+            <line id="Line 143" y1="60" x2="64" y2="60" stroke="#453F3C" stroke-width="2"/>
+            </g>
+            </g>
+        </svg>
+        
+        
+        <img style="width: 100%;" src="../image/anh-dong-trang-tri-18_114610692.gif">
+        <div id="leaves" style="text-align: left;">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i> 
+        </div>
+        <div id="leaves" style="text-align: right;">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i> 
+        </div>
+
+        <div class="card" style="background-color: sienna;">
+            <div class="thumbnail">
+                <img src="../image/coffee-918926_1280.jpg") class="left"> 
+            </div>
+            <div class="rightcard">
+                <h1 style="color: white;">Thưởng thức ly cà phê phin hương vị theo thời gian ...</h1> 
+                <div class="author">
+                    <img src="../image/SeaCoffee-removebg-preview.png">
+                    <h2>SeaCoffee</h2>
+                </div> 
+                <div class="separator"></div>
+                <p style="color: white;">Việt Nam tự hào sở hữu một di sản văn hóa cà phê giàu có, và 'Phin' chính là linh hồn, là nét văn hóa thưởng thức cà phê đã ăn sâu vào tiềm thức biết bao người Việt. Cà phê rang xay được chiết xuất chậm rãi từng giọt một thông qua dụng cụ lọc bằng kim loại có tên là 'Phin', cũng giống như thể hiện sự sâu sắc trong từng suy nghĩ và chân thành trong những mối quan hệ hiện hữu. Bạn có thể tùy thích lựa chọn uống nóng hoặc dùng chung với đá, có hoặc không có sữa đặc. SeaCoffee tự hào phục vụ cà phê Việt theo cách truyền thống của người Việt.</p> 
+                <ul>
+                    <li>
+                        <i class="fa fa-eye fa-2x"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-heart-o fa-2x"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope-o fa-2x"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-share-alt fa-2x"></i>
+                    </li>
+                </ul>
+            </div>
+            <h5>2</h5> 
+            <h6>Cà phê phin - 50.000 VND</h6> 
+            <a href="#" data-name="CaPhePhin" data-price="50000" class="float-button add-to-cart butn btn-white btn-animate">
+                <i style="font-size: 30px; margin-top: 7px" class="fas fa-cart-arrow-down"></i>
+            </a>
+        </div>
+
+        <img style="width: 100%;" src="../image/anh-dong-trang-tri-18_114610692.gif">
+        <div id="leaves" style="text-align: left;">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i> 
+        </div>
+        <div id="leaves" style="text-align: right;">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i> 
+        </div>
+        
+        
+
+        <div class="card"  style="background-color: #216ee2;">
+            <div class="thumbnail">
+                <img src="../image/ice-cream-3611698_1280.jpg") class="left"> 
+            </div>
+            <div class="rightcard">
+                <h1>Một chút kem mát lạnh cho mùa hè nóng bức</h1> 
+                <div class="author">
+                    <img src="../image/SeaCoffee-removebg-preview.png">
+                    <h2>SeaCoffee</h2>
+                </div> 
+                <div class="separator"></div>
+                <p style="color: white;">Nếu bạn là người yêu thích những gì mới mẻ và sành điệu để khơi nguồn cảm hứng. Hãy thưởng thức ngay các món nước đá xay độc đáo mang hương vị tự nhiên tại SeaCoffee để đánh thức mọi giác quan của bạn, giúp bạn luôn căng tràn sức sống.</p> 
+                <ul>
+                    <li>
+                        <i class="fa fa-eye fa-2x"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-heart-o fa-2x"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope-o fa-2x"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-share-alt fa-2x"></i>
+                    </li>
+                </ul>
+            </div>
+            <h5>3</h5> 
+            <h6>Ice cream - 30.000 VND</h6> 
+            <a href="#" data-name="IceCream" data-price="30000" class="float-button add-to-cart butn btn-white btn-animate">
+                <i style="font-size: 30px; margin-top: 7px" class="fas fa-cart-arrow-down"></i>
+            </a>
+        </div>
+
+        <img style="width: 100%;" src="../image/anh-dong-trang-tri-18_114610692.gif">
+        <div id="leaves" style="text-align: left;">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i> 
+        </div>
+        <div id="leaves" style="text-align: right;">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i> 
+        </div>
+
+        <div class="card" style="background-color: #9be936;">
+            <div class="thumbnail">
+                <img src="../image/herbal-tea-1410565_1280.jpg") class="left"> 
+            </div>
+            <div class="rightcard">
+                <h1>Thanh lọc muộn phiền bằng những tách trà thảo mộc ...</h1> 
+                <div class="author">
+                    <img src="../image/SeaCoffee-removebg-preview.png">
+                    <h2>SeaCoffee</h2>
+                </div> 
+                <div class="separator"></div>
+                <p>Hương vị tự nhiên, thơm ngon của Trà Việt với phong cách hiện đại tại SeaCoffee sẽ giúp bạn gợi mở vị giác của bản thân và tận hưởng một cảm giác thật khoan khoái, tươi mới.</p> 
+                <ul>
+                    <li>
+                        <i class="fa fa-eye fa-2x"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-heart-o fa-2x"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope-o fa-2x"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-share-alt fa-2x"></i>
+                    </li>
+                </ul>
+            </div>
+            <h5>4</h5> 
+            <h6>Trà hương thảo - 50.000 VND</h6> 
+            
+            <a href="#" data-name="TraHuongThao" data-price="50000" class="float-button add-to-cart butn btn-white btn-animate">
+                <i style="font-size: 30px; margin-top: 7px;" class="fas fa-cart-arrow-down"></i>
+            </a>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Thanh toán</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                <table class="show-cart table">
+                    
+                </table>
+                <div>Tổng cộng: <span class="total-cart"></span> VND</div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary">Đặt ngay</button>
+                </div>
+            </div>
+            </div>
+        </div> 
+    </section>
+    <footer class="footer">
+        <div>
+            <a href="#">Công ty</a>
+            <a href="#">Cơ hội nghề nghiệp</a>
+        </div>
+        <div>
+            <a href="#">Câu hỏi thường gặp</a>
+        </div>
+        <div>
+            <a href="#">Tìm cửa hàng</a>
+            <a href="#">Dành cho đối tác</a>
+        </div>
+        <div class="facebook-youtube">
+            <a target="_blank" href="https://www.facebook.com/meonganh/"><img src="../image/images/images/icons/facebook.png" /></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCpMQcQBb7QBJ2wDaVelzSpA"><img src="../image/images/images/icons/youtube.png" /></a>
+        </div>
+        <div>
+            <img src="../image/SeaCoffee-removebg-preview.png" />
+        </div>
+    </footer>
+<script src="../myjs/menu.js"></script>
+</body>
+</html>
