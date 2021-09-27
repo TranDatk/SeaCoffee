@@ -79,7 +79,7 @@ $("#submit-bt").click(function(){
       $("ul.mark").prepend(
         `
         <li class="comment">
-          <div class="avatar"><img src="../image/images/images/users/user-1.png" /></div>
+          <div class="avatar"><img src="image/images/images/users/user-1.png" /></div>
           <div class="text">
               <p>${text}</p>
               <ul class="ratings">
