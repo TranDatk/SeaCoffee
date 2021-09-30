@@ -3,14 +3,13 @@ var
     textInput = document.querySelector('.chatbox'), // lấy đối tượng textarea (L93-HTML) có class là .chatbox
     chatList = document.querySelector('.chatlist'), // lấy đối tượng ul (L76-HTML) có class là .chatlist
     userBubble = document.querySelectorAll('.userInput'), // tạo đối tượng là dữ liệu người dùng nhập vào có class là userInput
-    botBubble = document.querySelectorAll('.bot__output'), // tạo đối tượng là dữ liệu xuất ra cho người dùng có class là .bot__output
-    animateBotBubble = document.querySelectorAll('.bot__input--animation'), // xây dựng đối tượng cho dữ liệu xuất ra có hiệu ứng nổi lên
-    overview = document.querySelector('.chatbot__overview'), // lấy đối tượng div (L75-HTML) có class là .chatbot__overview
+    botBubble = document.querySelectorAll('.bot_output'), // tạo đối tượng là dữ liệu xuất ra cho người dùng có class là .bot__output
+    animateBotBubble = document.querySelectorAll('.bot_input-animation'), // xây dựng đối tượng cho dữ liệu xuất ra có hiệu ứng nổi lên
+    overview = document.querySelector('.chatbot_overview'), // lấy đối tượng div (L75-HTML) có class là .chatbot__overview
     hasCorrectInput, // kiểm tra dữ liệu hợp lệ nhập vào có đúng với từ khóa xanh không
-    animationCounter = 1, // 
+    animationCounter = 1, // đếm số câu trả lời bot
+    input, // lấy dữ liệu người dùng nhập
     animationBubbleDelay = 600, // thời gian nổi của các thoại chat
-    input, // 
-    previousInput,
     unkwnCommReaction = "Xin lỗi, tôi không hiểu bạn đang nói gì, vui lòng nhắn bao gồm cả từ khóa xanh",
     chatbotButton = document.querySelector(".submit-button") // lấy đối tượng button (L94) có class là .submit-button
 
@@ -63,13 +62,13 @@ var checkInput = function(input) { // kiểm tra input với từ khóa
     if(input == textVal || input.indexOf(textVal) >=0 && isReaction == false){ // nếu giá trị của textVal có trong input(L36||L23-JS) và isReaction == false
 			console.log("succes");
       hasCorrectInput = true; // Xác nhận có từ khóa xuất hiện trong dữ liệu nhập vào
-      botResponse(textVal); // Gọi hàm botResponse (L79-JS)
+      botResponse(textVal); // Gọi hàm botResponse (L77-JS)
 		}
 	}
   
   if(hasCorrectInput == false){ // Không xuất hiện từ khóa trong dữ liệu nhập
     console.log("failed");
-    unknownCommand(unkwnCommReaction); // Gọi hàm unknownCommand (L111-JS)
+    unknownCommand(unkwnCommReaction); // Gọi hàm unknownCommand (L85-JS)
   }
 }
 /*-------PART 2--------------------------------------------- */
@@ -88,14 +87,14 @@ function unknownCommand(unkwnCommReaction) { // Trường hợp dữ liệu ngư
 
   var failedResponse = document.createElement('li'); // Tạo thanh hộp chat 
 
-  failedResponse.classList.add('bot__output'); 
-  failedResponse.classList.add('bot__output--failed');
+  failedResponse.classList.add('bot_output'); 
+  failedResponse.classList.add('bot_output-failed');
 
   failedResponse.innerHTML = unkwnCommReaction; // Đưa chuỗi unkwnCommReaction (L14-JS) vào đối tượng
 
   chatList.appendChild(failedResponse) // đưa vào chatlist
 
-  animateBotOutput(); // Gọi hàm (L138-JS) đẩy các thanh hộp chat lên 
+  animateBotOutput(); // Gọi hàm (L127-JS) đẩy các thanh hộp chat lên 
 
   setTimeout(function(){ // Đẩy các hộp thoại chat mới xuất hiện nổi lên
     chatList.scrollTop = chatList.scrollHeight; // Lấy chiều cao của thành phần ul (L76-HTML) rồi đẩy xuống
@@ -109,11 +108,11 @@ function unknownCommand(unkwnCommReaction) { // Trường hợp dữ liệu ngư
 
 
 /*-------PART 4-----------------XỬ LÝ DỮ LIỆU BOT TRẢ RA---------------------------- */
-function responseText(e) { // e là chuỗi đã được nhập ở dòng 146~171-JS
+function responseText(e) { // e là chuỗi đã được nhập ở dòng 135~161-JS
 
   var response = document.createElement('li');
 
-  response.classList.add('bot__output');
+  response.classList.add('bot_output');
 
   response.innerHTML = e;
 

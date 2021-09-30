@@ -16,6 +16,19 @@ body{
     background-color: burlywood;
 }
 
+::-webkit-scrollbar {
+    /* for vertical scrollbars */
+    width: 0.65em;
+    /* for horizontal scrollbars */
+    height: 0.65em;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
 /*-------------------------------------------------------*/
 .title{
     position: relative;
@@ -652,7 +665,7 @@ footer{
   bottom:6px;
   transform:scale(0) rotate(0);
 }
-.login-form .group label .icon:after{
+.login-form .group label .icon:after{ /*dấu tick ghi nhớ*/
   top:6px;
   right:0;
   transform:scale(0) rotate(0);

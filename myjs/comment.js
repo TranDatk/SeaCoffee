@@ -73,7 +73,7 @@ $("#submit-bt").click(function(){
   var text = $("#txt").val();
   var stars = $("#custom");
   var starss = $(".stars");
-
+  $("#txt").val("");
   for(var i=0; i < 5;i++){
     if(check(text,$(starss[i]))){
       $("ul.mark").prepend(

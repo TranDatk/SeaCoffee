@@ -8,6 +8,19 @@
     font-family: 'poppins', sans-serif;
 }
 
+::-webkit-scrollbar {
+  /* for vertical scrollbars */
+  width: 0.65em;
+  /* for horizontal scrollbars */
+  height: 0.65em;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+}
+
 a, a:hover{
   text-decoration: none;
 }
